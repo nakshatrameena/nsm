@@ -1,22 +1,25 @@
 
+"use client";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <nav className="flex items-center justify-between border-b border-white/10 px-6 py-5">
+      <nav className="flex items-center justify-between px-6 py-6 md:px-12">
         <h1 className="text-2xl font-bold tracking-tight">
           NSM <span className="text-blue-400">Search</span>
         </h1>
+
         <span className="text-sm text-slate-400">
           Search smarter
         </span>
       </nav>
 
-      <section className="mx-auto flex min-h-[80vh] max-w-4xl flex-col items-center justify-center px-6 text-center">
+      <section className="mx-auto flex min-h-[80vh] max-w-5xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm text-blue-300">
           Welcome to NSM Search
         </span>
 
-        <h2 className="text-4xl font-extrabold leading-tight sm:text-6xl">
+        <h2 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
           Discover more.
           <br />
           <span className="text-blue-400">
@@ -24,7 +27,7 @@ export default function Home() {
           </span>
         </h2>
 
-        <p className="mt-6 max-w-xl text-slate-400 sm:text-lg">
+        <p className="mt-6 max-w-xl text-slate-400">
           A fresh starting point for your search experience.
           Find what you need with a simple, clean interface.
         </p>
@@ -32,7 +35,7 @@ export default function Home() {
         <form
           action="/search"
           method="GET"
-          className="mt-10 flex w-full max-w-2xl gap-2 rounded-2xl border border-white/10 bg-white/5 p-2"
+          className="mt-10 flex w-full max-w-2xl gap-3 rounded-2xl border border-white/10 bg-white/5 p-2"
         >
           <input
             type="search"
@@ -42,9 +45,10 @@ export default function Home() {
             required
             className="min-w-0 flex-1 bg-transparent px-4 py-3 text-white outline-none placeholder:text-slate-500"
           />
+
           <button
             type="submit"
-            className="rounded-xl bg-blue-600 px-5 py-3 font-semibold transition hover:bg-blue-500"
+            className="rounded-xl bg-blue-600 px-6 py-3 font-semibold transition hover:bg-blue-500"
           >
             Search
           </button>
@@ -56,7 +60,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} NSM Search
+        © 2026 NSM Search
       </footer>
     </main>
   );
